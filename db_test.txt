@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+
+
+<?php
+$servername = "localhost";
+$username = "smogmk_wp";
+$password = "lZtW4QqgSTXK";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+?>
+
+$returnValue = unserialize('a:2:{s:2:"uk";i:3228;s:2:"ru";i:2414;}');
+var_dump($returnValue);
+
+?>
+
+</body>
+</html>

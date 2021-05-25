@@ -1,0 +1,1 @@
+$sql = "INSERT INTO wp_posts(post_author, post_date, post_date_gmt, post_content, post_title, post_excerpt, post_status, comment_status, ping_status, post_name, guid, post_type ) VALUES ($post_author, $post_date, $post_date_gmt, $post_content, $product_title, $post_excerpt, $post_status, $comment_status, $ping_status, $post_name, $guid, $post_type)";
